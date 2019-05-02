@@ -74,13 +74,13 @@ forecast.roles().then(roles => {
 
 Assignments supports the following options (see below for more details):
 
-- `startDate`
+- `start_date`
 - `endDate`
 
 ```js
 var options = {
-	startDate: new Date(),
-	endDate: new Date(2018, 11, 25),
+	start_date: new Date(),
+	end_date: new Date(2018, 11, 25),
 };
 forecast.assignments(options).then(assignments => {
 	console.log(assignments);
@@ -99,13 +99,13 @@ forecast.assignments().then(assignments => {
 
 Milestones supports the following options (see below for more details):
 
-- `startDate`
+- `start_date`
 - `endDate`
 
 ```js
 var options = {
-	startDate: new Date(),
-	endDate: new Date(2018, 11, 25),
+	start_date: new Date(),
+	end_date: new Date(2018, 11, 25),
 };
 forecast.milestones(options).then(milestones => {
 	console.log(milestones);
@@ -122,5 +122,5 @@ forecast.milestones().then(milestones => {
 
 ### Options
 
-- `startDate` - a native date object, a moment.js date object or an ISO-8601 compatible date string.
+- `start_date` - a native date object, a moment.js date object or an ISO-8601 compatible date string.
 - `endDate` - a native date object, a moment.js date object or an ISO-8601 compatible date string.

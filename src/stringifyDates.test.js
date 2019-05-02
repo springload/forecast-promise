@@ -11,13 +11,13 @@ describe('stringifyDates', () => {
 	});
 
 	it('converts the start date', () => {
-		expect(stringifyDates({ startDate: 'someValue' })).toMatchObject({
+		expect(stringifyDates({ start_date: 'someValue' })).toMatchObject({
 			start_date: 'someValue',
 		});
 	});
 
 	it('converts the end date', () => {
-		const output = stringifyDates({ endDate: 'someValue' });
+		const output = stringifyDates({ end_date: 'someValue' });
 
 		expect(output).toMatchObject({
 			end_date: 'someValue',

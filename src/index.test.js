@@ -65,7 +65,7 @@ describe('forecast-promise', () => {
 		expect(whoAmI).toEqual('mock__user');
 
 		const projects = await f.projects({
-			startDate: 'mock__input',
+			start_date: 'mock__input',
 			endDate: 'mock__input',
 		});
 

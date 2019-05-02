@@ -1,12 +1,13 @@
 const toDateString = require('./toDateString');
 
 module.exports = options => {
-	const qs = {};
 
-	if (options.startDate) qs.start_date = toDateString(options.startDate);
+	if (options.start_date) {
+		options.start_date = toDateString(options.start_date);
+	}
 
-	if (options.endDate) {
-		qs.end_date = toDateString(options.endDate);
+	if (options.end_date) {
+		options.end_date = toDateString(options.end_date);
 	}
 
 	return qs;
