@@ -10,5 +10,5 @@ module.exports = options => {
 		options.end_date = toDateString(options.end_date);
 	}
 
-	return qs;
+	return options;
 };

@@ -12,7 +12,7 @@
 		"promise"
 	],
 	"description": "",
-	"main": "./dist/index.js",
+	"main": "./src/index.js",
 	"scripts": {
 		"test": "jest",
 		"lint": "eslint --ignore-path .gitignore .",
